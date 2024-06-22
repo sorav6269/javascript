@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+
+    // let sorav = "ram";
+    // switch (sorav) {
+    //     case "a":
+    //         document.write("Today is Monday")
+    //         break;
+    //     case "b":
+    //         document.write("Today is sunday")
+    //         break;
+    //     case "ram":
+    //         document.write("Today is Holiday")
+    //         break;
+    //     case "u":
+    //         document.write("Today is wed")
+    //         break;
+    //     default:
+    //         document.write("Enter the valid week day")
+
+    // }
+
+
+    let num = prompt("enter your numcent")
+    switch (true) {
+        case (num >= 80 && num <= 100):
+
+            document.write("you are in merit")
+            break;
+        case (num >= 60 && num < 80):
+
+            document.write("you are in I devision")
+            break;
+        case (num >= 45 && num < 60):
+
+            document.write("you are in II devision")
+            break;
+        case (num >= 33 && num < 45):
+
+            document.write("you are in III devision")
+            break;
+        case (num < 33):
+            document.write("you are fail")
+            break;
+        default:
+            document.write("Enter valid percent")
+    }
+
+</script>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div container id="bg">
+        <select onchange="bgcolor(this.value)">
+            <option >select color</option>
+            <option >red</option>
+            <option >yellow</option>
+            <option >pink</option>
+        </select>
+        <form  class="mt-5" style="text-align: center; border: 2px solid black; ">
+            <input type="text" name="ans">
+            <br>
+            <br>
+
+            <input type="button" value="1" onclick="ans.value+='1'">
+            <input type="button" value="2" onclick="ans.value+='2'">
+            <input type="button" value="3" onclick="ans.value+='3'">
+            <br>
+            <input type="button" value="4" onclick="ans.value+='4'">
+            <input type="button" value="5" onclick="ans.value+='5'">
+            <input type="button" value="6" onclick="ans.value+='6'">
+            <br>
+            <input type="button" value="7" onclick="ans.value+='7'">
+            <input type="button" value="8" onclick="ans.value+='8'">
+            <input type="button" value="9" onclick="ans.value+='9'">
+            <br>
+            <input type="button" value="0" onclick="ans.value+='0'">
+            <input type="button" value="+" onclick="ans.value+='+'">
+            <input type="button" value="-" onclick="ans.value+='-'">
+            <br>
+            <input type="button" value="*" onclick="ans.value+='*'">
+            <input type="button" value="/" onclick="ans.value+='/'">
+            <input type="button" value="=" onclick="ans.value= eval(ans.value)">
+            <input type="button" value="clear" onclick="ans.value=''">
+            <br>
+        </form>
+    </div>
+    <script>
+const bgcolor = (color)=>{
+    document.getElementById('bg').style.backgroundColor= color
+}
+    </script>
+</body>
+</html>
